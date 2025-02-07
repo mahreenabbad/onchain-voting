@@ -24,7 +24,6 @@
         (ok true)
     )
 )
-
 (define-public (vote (recipient principal) (decision bool))
     (begin
         (asserts! (is-some (index-of (var-get members) contract-caller)) err-not-a-member)
